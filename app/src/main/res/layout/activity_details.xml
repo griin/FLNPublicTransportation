@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailsActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back_button_text"
+            android:id="@+id/button_back"
+            android:nestedScrollingEnabled="false"
+            android:textStyle="normal"
+            android:typeface="normal" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/details_title"
+            android:text="@string/title_activity_details"
+            android:layout_gravity="bottom"
+            android:textAlignment="gravity"
+            android:typeface="normal"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/details_title_route"
+        android:background="#ffc0c0c0"
+        android:gravity="center_horizontal" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:id="@+id/stops_title"
+        android:layout_gravity="left"
+        android:text="@string/stops_title"
+        android:textStyle="bold" />
+    <ListView
+        android:id="@+id/list_stops"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_alignTop="@+id/linearLayout"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="top"
+        android:fastScrollEnabled="false" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:id="@+id/departures_title"
+        android:layout_gravity="top|left"
+        android:text="@string/departures_title"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:text="Weekday"
+        android:id="@+id/departure_weekday"
+        android:layout_gravity="top|left"
+        android:textSize="14sp"
+        android:layout_marginBottom="5px" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:id="@+id/departure_saturday"
+        android:layout_gravity="left|center_horizontal"
+        android:text="Saturday"
+        android:textSize="14sp"
+        android:layout_marginBottom="5px" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:text="Sunday"
+        android:id="@+id/departure_sunday"
+        android:textSize="14sp" />
+</LinearLayout>
