@@ -1,6 +1,19 @@
 <resources>
     <string name="app_name">FLNPublicTransportation</string>
-
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+    <string name="title">Floripa Public Transportation</string>
+    <string name="input_search_text">Type the street</string>
+    <string name="search_button_text">Search</string>
+    <string name="loading_routes">Loading routes...</string>
+    <string name="no_routes">No routes found.</string>
+    <string name="no_stops">No stops found.</string>
+    <string name="loading_departures">Loading departures...</string>
+    <string name="no_departures">No departures found.</string>
+    <string name="routes_title">Routes:</string>
+    <string name="findRoutesByStopName">https://api.appglu.com/v1/queries/findRoutesByStopName/run</string>
+    <string name="findStopsByRouteId">https://api.appglu.com/v1/queries/findStopsByRouteId/run</string>
+    <string name="findDeparturesByRouteId">https://api.appglu.com/v1/queries/findDeparturesByRouteId/run</string>
+    <string name="back_button_text">Back</string>
+    <string name="stops_title">Stops:</string>
+    <string name="departures_title">Departures:</string>
+    <string name="title_activity_details">Route:</string>
 </resources>
